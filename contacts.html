@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Онлайн-курс по программированию</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-EvE/LaluXpVZVrvsaBHHmdSvTWZTpKQL1LVD9uq4JLmJfD8fXbqHQAKBgZ0uDfRwZqnQfz17yKA6CVBEgH0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-green-700">Курс Программирования</a>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-green-600 transition-colors">Главная</a>
+                <a href="index.html#curriculum" class="hover:text-green-600 transition-colors">Программа</a>
+                <a href="index.html#features" class="hover:text-green-600 transition-colors">Преимущества</a>
+                <a href="index.html#testimonials" class="hover:text-green-600 transition-colors">Отзывы</a>
+                <a href="contacts.html" class="text-green-600 font-medium border-b-2 border-green-600">Контакты</a>
+                <a href="faq.html" class="hover:text-green-600 transition-colors">FAQ</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="index.html#signup" class="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                    <strong>Записаться</strong>
+                </a>
+                <a href="#" class="hidden md:inline-block text-gray-600 hover:text-gray-900 transition-colors">
+                    Войти
+                </a>
+                <button id="mobileMenuButtonContacts" class="md:hidden text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenuContacts" class="hidden md:hidden bg-white py-2 px-4 shadow-inner">
+            <a href="index.html" class="block py-2 hover:text-green-600 transition-colors">Главная</a>
+            <a href="index.html#curriculum" class="block py-2 hover:text-green-600 transition-colors">Программа</a>
+            <a href="index.html#features" class="block py-2 hover:text-green-600 transition-colors">Преимущества</a>
+            <a href="index.html#testimonials" class="block py-2 hover:text-green-600 transition-colors">Отзывы</a>
+            <a href="contacts.html" class="block py-2 text-green-600 font-medium">Контакты</a> 
+            <a href="faq.html" class="block py-2 hover:text-green-600 transition-colors">FAQ</a>
+            <a href="index.html#signup" class="block mt-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">
+                Записаться
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-700">Свяжитесь с нами</h1>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-2xl font-semibold mb-6 text-green-600">Контактная информация</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-green-500 text-xl mt-1 mr-4"></i>
+                                <p>г. Москва, ул. Примерная, д. 123</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-green-500 text-xl mt-1 mr-4"></i>
+                                <p>+7 (123) 456-78-90</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-green-500 text-xl mt-1 mr-4"></i>
+                                <p>info@course.example.com</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-green-500 text-xl mt-1 mr-4"></i>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-semibold mt-10 mb-4 text-green-600">Следите за нами</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-green-600 transition-colors">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-green-600 transition-colors">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-green-600 transition-colors">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/2">
+                        <h2 class="text-2xl font-semibold mb-6 text-green-600">Форма обратной связи</h2>
+                        <form id="feedbackForm" class="bg-white p-6 rounded-lg shadow-md">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Ваш Email *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 mb-2">Тема</label>
+                                <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="">Выберите тему</option>
+                                    <option value="general">Общий вопрос</option>
+                                    <option value="technical">Техническая поддержка</option>
+                                    <option value="billing">Вопросы по оплате</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox" name="consent" required class="rounded text-green-600 focus:ring-green-500">
+                                    <span class="ml-2 text-gray-700">Я согласен(а) на обработку моих персональных данных *</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-xl font-semibold mb-2">
+                <strong>Онлайн-курс по программированию</strong> by sillydu-bit
+            </p>
+            <p class="mb-4">
+                Контакты: <a href="mailto:info@course.example.com" class="text-green-400 hover:text-green-300">info@course.example.com</a>
+            </p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Главная</a>
+                <a href="contacts.html" class="text-green-400 hover:text-white transition-colors">Контакты</a>
+                <a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+            </div>
+            <p class="text-gray-400">
+                &copy; 2026 Курс Программирования. Все права защищены.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButtonContacts = document.getElementById('mobileMenuButtonContacts');
+        const mobileMenuContacts = document.getElementById('mobileMenuContacts');
+
+        mobileMenuButtonContacts.addEventListener('click', () => {
+            mobileMenuContacts.classList.toggle('hidden');
+        });
+
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            alert('Спасибо за ваше сообщение! (Форма пока не отправляет данные)');
+        });
+    </script>
+</body>
+</html>
