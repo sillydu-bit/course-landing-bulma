@@ -1,0 +1,30 @@
+.hero.is-medium .hero-body {
+    padding: 4rem 1.5rem;
+}
+
+.button.is-cta {
+    font-size: 1.25rem;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial-section {
+    background-color: whitesmoke;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
