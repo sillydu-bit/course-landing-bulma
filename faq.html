@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Онлайн-курс по программированию</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-EvE/LaluXpVZVrvsaBHHmdSvTWZTpKQL1LVD9uq4JLmJfD8fXbqHQAKBgZ0uDfRwZqnQfz17yKA6CVBEgH0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-green-700">Курс Программирования</a>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-green-600 transition-colors">Главная</a>
+                <a href="index.html#curriculum" class="hover:text-green-600 transition-colors">Программа</a>
+                <a href="index.html#features" class="hover:text-green-600 transition-colors">Преимущества</a>
+                <a href="index.html#testimonials" class="hover:text-green-600 transition-colors">Отзывы</a>
+                <a href="contacts.html" class="hover:text-green-600 transition-colors">Контакты</a>
+                <a href="faq.html" class="text-green-600 font-medium border-b-2 border-green-600">FAQ</a> 
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="index.html#signup" class="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                    <strong>Записаться</strong>
+                </a>
+                <a href="#" class="hidden md:inline-block text-gray-600 hover:text-gray-900 transition-colors">
+                    Войти
+                </a>
+                <button id="mobileMenuButtonFaq" class="md:hidden text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenuFaq" class="hidden md:hidden bg-white py-2 px-4 shadow-inner">
+            <a href="index.html" class="block py-2 hover:text-green-600 transition-colors">Главная</a>
+            <a href="index.html#curriculum" class="block py-2 hover:text-green-600 transition-colors">Программа</a>
+            <a href="index.html#features" class="block py-2 hover:text-green-600 transition-colors">Преимущества</a>
+            <a href="index.html#testimonials" class="block py-2 hover:text-green-600 transition-colors">Отзывы</a>
+            <a href="contacts.html" class="block py-2 hover:text-green-600 transition-colors">Контакты</a>
+            <a href="faq.html" class="block py-2 text-green-600 font-medium">FAQ</a> 
+            <a href="index.html#signup" class="block mt-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg text-center transition-colors">
+                Записаться
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-700">Часто задаваемые вопросы</h1>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-green-600">Сколько времени занимает курс?</h3>
+                        <p class="text-gray-700">Полный курс рассчитан на 6 месяцев интенсивного обучения.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-green-600">Требуются ли предварительные знания?</h3>
+                        <p class="text-gray-700">Нет, курс предназначен для абсолютных новичков.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-green-600">Как проходит поддержка от ментора?</h3>
+                        <p class="text-gray-700">Ментор доступен ежедневно в чате и раз в неделю — на видеозвонке.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-green-600">Выдается ли сертификат?</h3>
+                        <p class="text-gray-700">Да, после успешного завершения курса вы получаете сертификат.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-green-600">Можно ли вернуть деньги?</h3>
+                        <p class="text-gray-700">Да, у нас есть 14-дневная гарантия возврата средств.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-xl font-semibold mb-2">
+                <strong>Онлайн-курс по программированию</strong> by sillydu-bit
+            </p>
+            <p class="mb-4">
+                Контакты: <a href="mailto:info@course.example.com" class="text-green-400 hover:text-green-300">info@course.example.com</a>
+            </p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Главная</a>
+                <a href="contacts.html" class="text-gray-400 hover:text-white transition-colors">Контакты</a>
+                <a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+            </div>
+            <p class="text-gray-400">
+                &copy; 2026 Курс Программирования. Все права защищены.
+            </p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButtonFaq = document.getElementById('mobileMenuButtonFaq');
+        const mobileMenuFaq = document.getElementById('mobileMenuFaq');
+
+        mobileMenuButtonFaq.addEventListener('click', () => {
+            mobileMenuFaq.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
