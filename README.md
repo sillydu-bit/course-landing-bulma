@@ -4,10 +4,16 @@
 Онлайн-курс по веб-разработке для новичков.
 
 ## Используемый фреймворк
-[Bulma](https://bulma.io/)
+[Tailwind CSS](https://tailwindcss.com/)
 
 ## Описание
-Минималистичный лендинг, демонстрирующий основы работы с CSS-фреймворком Bulma.
+Многостраничный сайт, включающий главную страницу, страницу контактов с формой и страницу часто задаваемых вопросов (FAQ).
+
+## Структура
+* index.html - Главная страница
+* contacts.html - Контакты и форма обратной связи
+* faq.html - Часто задаваемые вопросы
+* 404.html - Страница ошибки
 
 ## Ссылка на GitHub Pages
-[https://sillydu-bit.github.io/course-landing-bulma/](https://sillydu-bit.github.io/course-landing-bulma/)
+[https://sillydu-bit.github.io/course-landing-tailwind/](https://sillydu-bit.github.io/course-landing-tailwind/)
