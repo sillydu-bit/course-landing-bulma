@@ -17,7 +17,7 @@
                 <a href="index.html#curriculum" class="hover:text-green-600 transition-colors">Программа</a>
                 <a href="index.html#features" class="hover:text-green-600 transition-colors">Преимущества</a>
                 <a href="index.html#testimonials" class="hover:text-green-600 transition-colors">Отзывы</a>
-                <a href="contacts.html" class="text-green-600 font-medium border-b-2 border-green-600">Контакты</a>
+                <a href="contacts.html" class="text-green-600 font-medium border-b-2 border-green-600">Контакты</a> 
                 <a href="faq.html" class="hover:text-green-600 transition-colors">FAQ</a>
             </div>
 
@@ -92,36 +92,60 @@
                         <h2 class="text-2xl font-semibold mb-6 text-green-600">Форма обратной связи</h2>
                         <form id="feedbackForm" class="bg-white p-6 rounded-lg shadow-md">
                             <div class="mb-4">
-                                <label for="name" class="block text-gray-700 mb-2">Ваше имя *</label>
-                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <label for="name" class="block text-gray-700 mb-2">ФИО<span class="text-red-500">*</span></label>
+                                <div class="relative">
+                                    <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required class="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fas fa-user text-gray-400"></i>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Введите фамилию, имя и отчество</p>
                             </div>
+
                             <div class="mb-4">
-                                <label for="email" class="block text-gray-700 mb-2">Ваш Email *</label>
-                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <label for="phone" class="block text-gray-700 mb-2">Телефон</label>
+                                <div class="relative">
+                                    <input type="tel" id="phone" name="phone" placeholder="+7(___)___-__-__" class="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fas fa-phone text-gray-400"></i>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Формат: +7(XXX) XXX-XX-XX</p>
                             </div>
+
                             <div class="mb-4">
-                                <label for="subject" class="block text-gray-700 mb-2">Тема</label>
-                                <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-                                    <option value="">Выберите тему</option>
-                                    <option value="general">Общий вопрос</option>
-                                    <option value="technical">Техническая поддержка</option>
-                                    <option value="billing">Вопросы по оплате</option>
-                                    <option value="other">Другое</option>
-                                </select>
+                                <label for="email" class="block text-gray-700 mb-2">Email<span class="text-red-500">*</span></label>
+                                <div class="relative">
+                                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required class="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fas fa-envelope text-gray-400"></i>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Введите корректный email адрес</p>
                             </div>
-                            <div class="mb-4">
-                                <label for="message" class="block text-gray-700 mb-2">Сообщение *</label>
-                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Сообщение</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Текст сообщения..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                                <p class="text-xs text-gray-500 mt-1">До 500 символов</p>
                             </div>
+
                             <div class="mb-6">
                                 <label class="inline-flex items-center">
-                                    <input type="checkbox" name="consent" required class="rounded text-green-600 focus:ring-green-500">
-                                    <span class="ml-2 text-gray-700">Я согласен(а) на обработку моих персональных данных *</span>
+                                    <input type="checkbox" id="consent" name="consent" required class="rounded text-green-600 focus:ring-green-500">
+                                    <span class="ml-2 text-gray-700">Я согласен на обработку персональных данных<span class="text-red-500">*</span></span>
                                 </label>
                             </div>
-                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors">
-                                Отправить
-                            </button>
+
+                            <div class="flex flex-wrap gap-4 justify-center">
+                                <button type="submit" class="flex-1 min-w-[120px] bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors flex items-center justify-center">
+                                    <span class="mr-2"><i class="fas fa-paper-plane"></i></span>
+                                    <span>Отправить</span>
+                                </button>
+                                <button type="reset" class="flex-1 min-w-[120px] bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-4 rounded-lg transition-colors">
+                                    Очистить
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -159,18 +183,7 @@
         </div>
     </footer>
 
-    <script>
-        const mobileMenuButtonContacts = document.getElementById('mobileMenuButtonContacts');
-        const mobileMenuContacts = document.getElementById('mobileMenuContacts');
-
-        mobileMenuButtonContacts.addEventListener('click', () => {
-            mobileMenuContacts.classList.toggle('hidden');
-        });
-
-        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-            e.preventDefault(); 
-            alert('Спасибо за ваше сообщение! (Форма пока не отправляет данные)');
-        });
-    </script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/logging.js"></script>
 </body>
 </html>
